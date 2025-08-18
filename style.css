@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f3;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #2e7d32;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+img{
+    width:100%;
+    max-width: 200px;
+    height: auto;
+}
+.logo {
+  font-size: 28px;
+  color: #c8e6c9;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-item:hover {
+  color: #a5d6a7;
+}
+
+/* Conteúdo */
+.inicio {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.iniciativas {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 36px;
+  color: #1b5e20;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #81c784;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #388e3c;
+}
+footer {
+  background-color: #2e7d32;  /* cor de fundo similar ao cabeçalho */
+  color: #ffffff;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+/* Container para centralizar e organizar os itens do rodapé */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;  /* Largura máxima para não esticar demais */
+  margin: 0 auto;
+  flex-wrap: wrap;  /* Para adaptar bem em telas pequenas */
+}
+
+/* Cada item do rodapé */
+.footer-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Cabeçalhos no rodapé */
+.footer-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #c8e6c9;  /* Tom claro para destacar */
+}
+
+/* Estilo para os links das redes sociais */
+.footer-item a {
+  text-decoration: none;
+  color: #c8e6c9;
+  display: block;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.footer-item a:hover {
+  color: #81c784;  /* Cor mais clara no hover */
+}
+.form-container {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #f9fff9;
+  border: 1px solid #c8e6c9;
+  border-radius: 10px;
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+select,
+textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  font-size: 16px;
+  background-color: #ffffff;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #66bb6a;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Botões */
+input[type="submit"],
+input[type="reset"] {
+  padding: 12px 25px;
+  border: none;
+  background-color: #2e7d32;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #43a047;
+}
+
+/* Rádio e checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.contato-externo {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #e8f5e9;
+  border-left: 5px solid #81c784;
+  border-radius: 8px;
+}
+
+/* Estilo para o <small> */
+small {
+  display: block;
+  margin-top: 10px;
+  color: #555555;
+  font-style: italic;
+  font-size: 14px;
+}
